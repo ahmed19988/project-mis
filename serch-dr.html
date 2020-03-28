@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+        <!-- First mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- IE comatibility Meta -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>serch-doctors</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarlink1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="logo-img" src="images/logo.png"></a>
+      <a class="line1 navbar-left visible-xs" href="javascript:void(0);"><input type="text" class="form-control4" placeholder="ابحث بالتخصص والاسم والمنطقة ... "></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbarlink1">
+        
+           <ul class="nav navbar-nav navbar-left">
+            <li><a class="line" href="file:///D:/mis/sign-up.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span class="icon-login">تسجيل</span></a></li>
+            <li><a class="line" href="file:///D:/mis/login.html"><i class="fa fa-sign-in" aria-hidden="true"></i><span class="icon-login">دخول</span></a></li>
+          </ul>
+        
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="line" href="#">الصفحة الرئيسية</a></li>
+        <li><a class="line line-span" href="#">صفحة البحث</a></li>
+        <li><a class="line" href="#"></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle line" data-toggle="dropdown">اسم المستخدم<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a class="line tab" href="#">صفحتي</a></li>
+              <li><a class="line tab" href="#">ملفي الشخصي</a></li>
+              <li><a class="line tab" href="#">اعدادات الحساب</a></li>
+              <li><a class="line tab" href="#">الخروج</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->       
+    </nav>
+    
+    <section class="header-property">
+           <div class="center-nav">
+            <h2>ابحث عن افضل الاطباء</h2>
+            <div class="property hidden-xs">
+               
+             <ul>
+                <li><select id="select1">
+        <option hidden>بالتخصص</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+        <option>Jun</option>
+        <option>Jul</option>
+        <option>Aug</option>
+        <option>Sept</option>
+        <option>Oct</option>
+        <option>Nov</option>
+        <option>Dec</option>
+        </select></li>  
+                <li><select id="select2">
+        <option hidden>بالمحافظة</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+        <option>Jun</option>
+        <option>Jul</option>
+        <option>Aug</option>
+        <option>Sept</option>
+        <option>Oct</option>
+        <option>Nov</option>
+        <option>Dec</option>
+        </select></li>
+                <li><select id="select3">
+        <option hidden>بالاسم</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+        <option>Jun</option>
+        <option>Jul</option>
+        <option>Aug</option>
+        <option>Sept</option>
+        <option>Oct</option>
+        <option>Nov</option>
+        <option>Dec</option>
+        </select></li>
+                <li><button class="serch-btn">بحث<i class="fa fa-search" aria-hidden="true"></i></button></li>
+                
+             </ul>   
+            </div>
+        </div>
+    </section>
+    
+    <section class="serch">
+       <div class="jobs col-lg-12 ">
+        <div class="jobs-top">
+      <div class="container">
+      <div class="row">
+          
+      <div class="serch-property col-lg-3 visible-lg">
+          <ul class="menuee">
+            <div class="address"><i class="fa fa-check-square-o icon" aria-hidden="true"></i><span>حدد بحثك</span></div>
+          <li class="dropdown-tool">
+          <div class="dropdown line tool-1" data-toggle="dropdown"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="name-menu1">اللقب</span><span class="caret-tool1"></span></div>
+          <ul class="tool-2" role="menu">
+            <li><input id="checkbox-btn1" type="checkbox"><label class="one" for="checkbox-btn1"><span class="checkbox-name">أستاذ</span></label> </li>
+            <li><input id="checkbox-btn2" type="checkbox"><label class="one" for="checkbox-btn2"><span class="checkbox-name">استشاري</span></label> </li>
+            <li><input id="checkbox-btn3" type="checkbox"><label class="one" for="checkbox-btn3"><span class="checkbox-name">اخصائي</span></label> </li>
+          </ul>
+          </li>
+        
+          <li class="dropdown-tool">
+          <div class="dropdown line tool-1" data-toggle="dropdown"><i class="fa fa-venus-mars" aria-hidden="true"></i><span class="name-menu1">النوع</span><span class="caret-tool1"></span></div>
+          <ul class="tool-2" role="menu">
+            <li><input id="checkbox-btn4" type="checkbox"><label class="one" for="checkbox-btn4"><span class="checkbox-name">ذكر</span></label> </li>
+            <li><input id="checkbox-btn5" type="checkbox"><label class="one" for="checkbox-btn5"><span class="checkbox-name">انثى</span></label> </li>
+          </ul>
+          </li>
+              
+        <li class="dropdown-tool">
+          <div class="dropdown line tool-1" data-toggle="dropdown"><i class="fa fa-stethoscope" aria-hidden="true"></i><span class="name-menu2">التخصصات الفرعية</span><span class="caret-tool2"></span></div>
+           <ul class="tool-2" role="menu">
+            <li><input id="checkbox-btn7" type="checkbox"><label class="one" for="checkbox-btn7"><span class="checkbox-name">1</span></label> </li>
+            <li><input id="checkbox-btn8" type="checkbox"><label class="one" for="checkbox-btn8"><span class="checkbox-name">2</span></label> </li>
+            <li><input id="checkbox-btn9" type="checkbox"><label class="one" for="checkbox-btn9"><span class="checkbox-name">3</span></label> </li>
+            <li><input id="checkbox-btn10" type="checkbox"><label class="one" for="checkbox-btn10"><span class="checkbox-name">4</span></label> </li>
+            <li><input id="checkbox-btn11" type="checkbox"><label class="one" for="checkbox-btn11"><span class="checkbox-name">5</span></label> </li>
+          </ul>
+          </li>   
+          </ul>
+        </div>
+          
+            <div class="choose-serch col-lg-9 col-md-12 col-sm-12 col-xs-12">
+             <div class="top-menu hidden-xs">
+              <div class="speciality">
+                  <p class="speciality-title">كل التخصصات</p>
+                  <p class="search-results">100 دكتور</p>
+              </div>  
+             <div class="btn-group">
+                 <div class="drop-title"><p>ترتيب:</p></div>
+                 <span>
+                 <button  type="button" id="group-sd">
+                      الأكثر تطابقا
+                 <span class="caret caret-posicion"></span>
+                 </button>
+              <div id="ele">
+                  <ul class="ele-bottom">
+                      <li><input  type="radio" id="d1" name="cricle1" ><label class="same" for="d1">الأكثر تطابقا</label></li>
+                      <li><input  type="radio" id="d2" name="cricle1" ><label class="same" for="d2">الأكثر تطابقا</label></li>
+                      <li><input  type="radio" id="d3" name="cricle1" ><label class="same" for="d3">الأكثر تطابقا</label></li>
+                      <li><input  type="radio" id="d4" name="cricle1" ><label class="same" for="d4">الأكثر تطابقا</label></li>
+                  </ul> 
+              </div>
+                 </span>
+            </div>   
+             </div>
+                
+               
+            <div class="top-menu1 visible-xs">
+        <ul class="sort">
+            <li> 
+             <div class="btn-group1">
+                 <span>
+                 <button  type="button" id="group-sd1">
+                     ترتيب
+                 <i class="fa fa-sort-amount-asc" aria-hidden="true"></i>
+                 </button>
+              <div id="ele1">
+                  <ul class="ele-bottom">
+                      <li><input  type="radio" id="s2" name="cricle2" ><label class="same" for="s2">الأكثر تطابقا</label></li>
+                      <li><input  type="radio" id="s3" name="cricle2" ><label class="same" for="s3">الأكثر تطابقا</label></li>
+                      <li><input  type="radio" id="s4" name="cricle2" ><label class="same" for="s4">الأكثر تطابقا</label></li>
+                      <li><input  type="radio" id="s5" name="cricle2" ><label class="same" for="s5">الأكثر تطابقا</label></li>
+                  </ul> 
+              </div>
+                 </span>
+                </div>
+        </li>
+                 
+        <li>
+            <div class="btn-group1">
+                 <span>
+                <a class="click" href="javascript:void(0);"><button  type="button" id="group-sd2">
+                     تصفية
+                 <i class="fa fa-filter" aria-hidden="true"></i>
+                 </button></a>
+                 </span>
+            </div>   
+         </li>
+        </ul> 
+          </div>
+                
+            
+        <div class="bg-serch">
+            <div class="suggests col-lg-4 col-md-4 hidden-sm hidden-xs">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider1">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+             <div class="book col-lg-6 col-md-6 col-sm-10 col-xs-10">  
+              <ul>
+                  <li><h2>دكتور احمد عادل</h2></li>
+                  <li><h3>استشاري الامراض النفسية</h3></li>
+                  <li><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                  <li><i id="ico-2" class="fa fa-stethoscope" aria-hidden="true"></i><p class="inline">دكتور جراحة أورام متخصص في جراحة اورام اطفال</p></li>
+                  <li><i id="ico-2" class="fa fa-map-marker" aria-hidden="true"></i><p class="inline">الدقي : شارع الدقى</p></li>
+                  <li><i id="ico-2" class="fa fa-money" aria-hidden="true"></i><p class="inline">الكشف : 300 جنيه</p></li>
+                  <li><i id="ico-2" class="fa fa-clock-o" aria-hidden="true"></i><p class="inline">وقت الانتظار : 30 - 90 دقيقة</p></li>
+                  <li><i id="ico-2" class="fa fa-phone" aria-hidden="true"></i><p class="inline">01020304050</p></li>
+              </ul>      
+              </div>
+              <div class="temple-count col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <div class="color1">
+              <img src="images/Capture1.PNG">
+            </div>
+            </div>
+                <div class="suggests visible-sm col-sm-12">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider5">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+            </div>
+                
+                
+        <div class="bg-serch">
+            <div class="suggests col-lg-4 col-md-4 hidden-sm hidden-xs">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider2">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+             <div class="book col-lg-6 col-md-6 col-sm-10 col-xs-10">  
+              <ul>
+                  <li><h2>دكتور احمد عادل</h2></li>
+                  <li><h3>استشاري الامراض النفسية</h3></li>
+                  <li><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                  <li><i id="ico-2" class="fa fa-stethoscope" aria-hidden="true"></i><p class="inline">دكتور جراحة أورام متخصص في جراحة اورام اطفال</p></li>
+                  <li><i id="ico-2" class="fa fa-map-marker" aria-hidden="true"></i><p class="inline">الدقي : شارع الدقى</p></li>
+                  <li><i id="ico-2" class="fa fa-money" aria-hidden="true"></i><p class="inline">الكشف : 300 جنيه</p></li>
+                  <li><i id="ico-2" class="fa fa-clock-o" aria-hidden="true"></i><p class="inline">وقت الانتظار : 30 - 90 دقيقة</p></li>
+                  <li><i id="ico-2" class="fa fa-phone" aria-hidden="true"></i><p class="inline">01020304050</p></li>
+              </ul>      
+              </div>
+              <div class="temple-count col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <div class="color1">
+              <img src="images/Capture1.PNG">
+            </div>
+            </div>
+                <div class="suggests visible-sm col-sm-12">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider6">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+            </div>
+                    
+        <div class="bg-serch">
+            <div class="suggests col-lg-4 col-md-4 hidden-sm hidden-xs">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider3">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+             <div class="book col-lg-6 col-md-6 col-sm-10 col-xs-10">  
+              <ul>
+                  <li><h2>دكتور احمد عادل</h2></li>
+                  <li><h3>استشاري الامراض النفسية</h3></li>
+                  <li><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                  <li><i id="ico-2" class="fa fa-stethoscope" aria-hidden="true"></i><p class="inline">دكتور جراحة أورام متخصص في جراحة اورام اطفال</p></li>
+                  <li><i id="ico-2" class="fa fa-map-marker" aria-hidden="true"></i><p class="inline">الدقي : شارع الدقى</p></li>
+                  <li><i id="ico-2" class="fa fa-money" aria-hidden="true"></i><p class="inline">الكشف : 300 جنيه</p></li>
+                  <li><i id="ico-2" class="fa fa-clock-o" aria-hidden="true"></i><p class="inline">وقت الانتظار : 30 - 90 دقيقة</p></li>
+                  <li><i id="ico-2" class="fa fa-phone" aria-hidden="true"></i><p class="inline">01020304050</p></li>
+              </ul>      
+              </div>
+              <div class="temple-count col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <div class="color1">
+              <img src="images/Capture1.PNG">
+            </div>
+            </div>
+                <div class="suggests visible-sm col-sm-12">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider7">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+            </div>
+                   
+        <div class="bg-serch">
+            <div class="suggests col-lg-4 col-md-4 hidden-sm hidden-xs">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider4">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+             <div class="book col-lg-6 col-md-6 col-sm-10 col-xs-10">  
+              <ul>
+                  <li><h2>دكتور احمد عادل</h2></li>
+                  <li><h3>استشاري الامراض النفسية</h3></li>
+                  <li><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star" aria-hidden="true"></i><i id="ico-1" class="fa fa-star-half-o" aria-hidden="true"></i></li>
+                  <li><i id="ico-2" class="fa fa-stethoscope" aria-hidden="true"></i><p class="inline">دكتور جراحة أورام متخصص في جراحة اورام اطفال</p></li>
+                  <li><i id="ico-2" class="fa fa-map-marker" aria-hidden="true"></i><p class="inline">الدقي : شارع الدقى</p></li>
+                  <li><i id="ico-2" class="fa fa-money" aria-hidden="true"></i><p class="inline">الكشف : 300 جنيه</p></li>
+                  <li><i id="ico-2" class="fa fa-clock-o" aria-hidden="true"></i><p class="inline">وقت الانتظار : 30 - 90 دقيقة</p></li>
+                  <li><i id="ico-2" class="fa fa-phone" aria-hidden="true"></i><p class="inline">01020304050</p></li>
+              </ul>      
+              </div>
+              <div class="temple-count col-lg-2 col-md-2 col-sm-2 col-xs-2">
+              <div class="color1">
+              <img src="images/Capture1.PNG">
+            </div>
+            </div>
+                <div class="suggests visible-sm col-sm-12">         
+         <div id="imgg1">
+              <div class="suggests-name">موا<span>عيد</span></div>
+              <div class="suggests-info">الاط<span>باء</span></div>
+   <div class="banner">
+    <ul id="lightSlider8">
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+        <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+          <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+         <li>
+         <div class="sub-name">الاحد</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+         <div>10:00 PM</div>
+        </li>
+    </ul>
+        </div>      
+        </div>
+        </div>  
+            </div>
+                
+
+                
+               
+
+                 
+    </div>              
+    </div> 
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+    <div class="full-nav1 visible-xs">
+    <nav class="nav1">
+      <div class="save-recover">
+        <div class="top"><h3> ابحث</h3></div>
+        
+        <form>
+        <select id="text2">
+            <option value="">ابحث عن التخصص...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>     
+       </select>
+        <select id="text2">
+            <option value="">ابحث عن المنطقة...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>     
+       </select>
+        <select id="text2">
+            <option value="">ابحث باسم الدكتور...</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>     
+       </select>
+            <br>
+        <input type="button" class="save" value="ابحث">
+       <a class="nav1-close" href="javascript:void(0);"><input type="button" class="save" value="الغاء"></a>
+        
+        </form> 
+       </div> 
+    </nav>
+    </div>
+    
+    
+    
+    <div class="full-nav2 visible-xs">
+    <nav class="nav2">
+        
+      <div class="serch-property-phone">
+          <ul class="menuee-phone">
+            <div class="address-phone"><i class="fa fa-check-square-o icon" aria-hidden="true"></i><span>حدد بحثك</span></div>
+          <li class="dropdown-tool">
+          <div class="dropdown line tool-1" data-toggle="dropdown"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="name-menu1">اللقب</span><span class="caret-tool1 hidden-xs"></span></div>
+          <ul class="tool-2" role="menu">
+            <li><input id="checkbox-btn-1" type="checkbox"><label class="one" for="checkbox-btn-1"><span class="checkbox-name">أستاذ</span></label> </li>
+            <li><input id="checkbox-btn-2" type="checkbox"><label class="one" for="checkbox-btn-2"><span class="checkbox-name">استشاري</span></label> </li>
+            <li><input id="checkbox-btn-3" type="checkbox"><label class="one" for="checkbox-btn-3"><span class="checkbox-name">اخصائي</span></label> </li>
+          </ul>
+          </li>
+        
+          <li class="dropdown-tool">
+          <div class="dropdown line tool-1" data-toggle="dropdown"><i class="fa fa-venus-mars" aria-hidden="true"></i><span class="name-menu1">النوع</span><span class="caret-tool1 hidden-xs"></span></div>
+          <ul class="tool-2" role="menu">
+            <li><input id="checkbox-btn-4" type="checkbox"><label class="one" for="checkbox-btn-4"><span class="checkbox-name">ذكر</span></label> </li>
+            <li><input id="checkbox-btn-5" type="checkbox"><label class="one" for="checkbox-btn-5"><span class="checkbox-name">انثى</span></label> </li>
+          </ul>
+          </li>
+              
+        <li class="dropdown-tool">
+          <div class="dropdown line tool-1" data-toggle="dropdown"><i class="fa fa-stethoscope" aria-hidden="true"></i><span class="name-menu2">التخصصات الفرعية</span><span class="caret-tool2 hidden-xs"></span></div>
+           <ul class="tool-2" role="menu">
+            <li><input id="checkbox-btn-7" type="checkbox"><label class="one" for="checkbox-btn-7"><span class="checkbox-name">1</span></label> </li>
+            <li><input id="checkbox-btn-8" type="checkbox"><label class="one" for="checkbox-btn-8"><span class="checkbox-name">2</span></label> </li>
+            <li><input id="checkbox-btn-9" type="checkbox"><label class="one" for="checkbox-btn-9"><span class="checkbox-name">3</span></label> </li>
+            <li><input id="checkbox-btn-10" type="checkbox"><label class="one" for="checkbox-btn-10"><span class="checkbox-name">4</span></label> </li>
+            <li><input id="checkbox-btn-11" type="checkbox"><label class="one" for="checkbox-btn-11"><span class="checkbox-name">5</span></label> </li>
+          </ul>
+          </li>   
+          </ul>
+           <input type="button" class="save" value="ابحث">
+           <a class="nav2-close" href="javascript:void(0);"><input type="button" class="save" value="الغاء"></a>
+        </div>
+    </nav>
+    </div>
+    
+<footer class="footer-info col-lg-12">      
+      <div class="container">
+        <div class="row">
+          <div class="footer-d col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="ftco-footer-widget ">
+              <h2 class="ftco-h2">Medical Servicer</h2>
+              <p> يتضمن الصحة الفعاله للمريض من خلال تسهيل عمليه البحث والاطلاع والحفظ</p>
+              <ul class="ftco-footer-social list-unstyled mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>
+                  <li class="ftco-animate"><a href="#"><span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i></span></a></li>
+              </ul>
+            </div>
+          </div>
+            
+        <div class="footer-d col-lg-4 col-md-4 col-sm-4 col-xs-6">
+             <div class="ftco-footer-widget ">
+              <h2 class="ftco-h2">لمزودي الخدمات الطبية</h2>
+              <ul class="list-unstyled">
+                <li ><a href="#"><span class="glyphicon glyphicon-share-alt mr-2"></span>المريض</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt mr-2"></span> للاطباء </a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt mr-2"></span>الممرضين</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt mr-2"></span>مراكز التحاليل والاشعة</a></li>
+              </ul>
+            </div>
+          </div>
+         
+          <div class="footer-d col-lg-4 col-md-4 col-sm-4 col-xs-6">
+            <div class="ftco-footer-widget ">
+              <h2 class="ftco-h2">ابحث بواسطة</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt mr-2"></span>التخصص</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt mr-2"></span>الاسم</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-share-alt mr-2"></span>المكان</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class=" footer-end col-xs-12 text-center">
+	
+            <p>
+  Copyright &copy; All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a class="mr-3" href="#" target="_blank">team modern</a>
+  </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script>
+    $('#lightSlider1').lightSlider();
+</script>
+<script>
+    $('#lightSlider2').lightSlider();
+</script>
+<script>
+    $('#lightSlider3').lightSlider();
+</script>
+<script>
+    $('#lightSlider4').lightSlider();
+</script>
+<script>
+    $('#lightSlider5').lightSlider();
+</script>
+<script>
+    $('#lightSlider6').lightSlider();
+</script>
+<script>
+    $('#lightSlider7').lightSlider();
+</script>
+<script>
+    $('#lightSlider8').lightSlider();
+</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ap.js"></script>
+    <script src="js/sd.js"></script>
+
+
+</body>
+</html>
